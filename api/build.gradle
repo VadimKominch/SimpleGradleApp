@@ -1,0 +1,10 @@
+apply plugin: 'application'
+mainClassName = 'api.App'
+
+dependencies {
+	compile project(":core")
+}
+
+run {
+	main = project.getProperty('mainClassName')
+}
